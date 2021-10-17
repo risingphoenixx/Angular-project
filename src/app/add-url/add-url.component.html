@@ -1,0 +1,13 @@
+<div class="card-body">
+    <form [formGroup]="addLongURL" (ngSubmit)="saveUrl()">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="text" class="form-control" id="Title" aria-describedby="emailHelp" placeholder="Enter a title for url" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label for="longurl">Long Url</label>
+            <input type="url" class="form-control" id="longurl" placeholder="Enter the long url" formControlName="longUrl">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
