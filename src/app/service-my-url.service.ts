@@ -4,7 +4,8 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ServiceMyUrlService {
-url='https://6167da28ba841a001727c44d.mockapi.io/longUrlToShortUrl';
+url=
+  'https://6167da28ba841a001727c44d.mockapi.io/myUrl';
   constructor(private http: HttpClient) { }
 
     saveUrlData(data:any){
